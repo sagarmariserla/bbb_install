@@ -17,6 +17,8 @@ sudo mkdir /medha_gateway/local_server
 echo "******************************************************************************permission changing**-****************************************************************************** "
 sudo chmod +x iot_frmwrk*
 sudo chmod +x zwave_app*
+sudo chmod +x hard*
+sudo chmod +x cron*
 
 sudo mv -f $(pwd)/iot_frm* zwave_app* app.cfg cmd_class.cfg zwave_device_rec.txt hard_reset_arm cron_job rm_boot_app.sh config_change/ /medha_gateway
 
