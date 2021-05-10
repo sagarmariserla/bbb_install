@@ -11,6 +11,7 @@ sudo systemctl disable zware-service
 sudo bash rm_boot_app.sh iot_frmwrk zwave_app
 
 echo y | sudo apt-get purge zipgateway
+sudo rm -rf /medha_gateway
 
 sudo mkdir /medha_gateway
 sudo mkdir /medha_gateway/local_server
