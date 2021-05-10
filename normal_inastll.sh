@@ -2,6 +2,7 @@
 # NOTE : do not use the sudo permission
 # Run only the --> bash beaglebone_script.sh <iotfrmwrok executable name> <zwave app executable name>
 # we have to add the booting_script.sh give the inputs on run time. info is present in booting_script.sh.
+
 sudo service iot_frmwrk stop
 sudo service zwave_app stop
 sudo service zware-service stop
