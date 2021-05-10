@@ -21,7 +21,7 @@ sudo chmod +x zwave_app*
 sudo chmod +x hard*
 sudo chmod +x cron*
 sudo chmod +x /config_change/config
-sudo chmod +x zware-service
+
 
 sudo mv -f $(pwd)/iot_frm* zwave_app* app.cfg cmd_class.cfg zwave_device_rec.txt hard_reset_arm cron_job rm_boot_app.sh config_change/ /medha_gateway
 
@@ -48,9 +48,6 @@ sudo systemctl start zware-service.service
 echo "******************************************************************************booting script**************************************************************************************"
 sudo bash $(pwd)/booting_script.sh $1 iot_frmwrk
 sudo bash $(pwd)/booting_script.sh $2 zwave_app
-
-sudo rm /etc/init.d/zware-service
-sudo mv zware-service /etc/init.d/
 
 sudo rm -rf $(pwd)/booting_script.sh Z_wave_intall_beaglebone beaglebone_script.sh ../bb*
 echo "*****************************************************************************chnage the configuration******************************************************************************"
