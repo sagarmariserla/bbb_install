@@ -24,5 +24,5 @@ sudo systemctl stop $VAR.service
 sudo systemctl disable $VAR.service
 sudo rm /usr/sbin/$VAR.sh
 sudo rm /etc/systemd/system/$VAR.service
-sudo rm $(pwd)/frmwrk.log
+sudo rm /medha_gateway/frmwrk.log
 
