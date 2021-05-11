@@ -2,12 +2,13 @@
 # NOTE : do not use the sudo permission
 # Run only the --> bash beaglebone_script.sh <iotfrmwrok executable name> <zwave app executable name>
 # we have to add the booting_script.sh give the inputs on run time. info is present in booting_script.sh.
-
+echo "please wait..."
 sudo service iot_frmwrk stop
 sudo service zwave_app stop
 sudo service zware-service stop
 sudo service zipgateway stop
-sudo systemctl disable zware-service
+#sudo systemctl disable zware-service
+sudo rm /etc/init.d/zware-service
 sudo bash rm_boot_app.sh iot_frmwrk zwave_app
 
 echo y | sudo apt-get purge zipgateway
@@ -20,7 +21,7 @@ sudo chmod +x iot_frmwrk*
 sudo chmod +x zwave_app*
 sudo chmod +x hard*
 sudo chmod +x cron*
-sudo chmod +x /config_change/config
+sudo chmod +x config_change/config
 
 
 sudo mv -f $(pwd)/iot_frm* zwave_app* app.cfg cmd_class.cfg zwave_device_rec.txt hard_reset_arm cron_job rm_boot_app.sh config_change/ /medha_gateway
