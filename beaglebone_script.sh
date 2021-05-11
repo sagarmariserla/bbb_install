@@ -43,7 +43,7 @@ sudo chmod +x hard*
 sudo chmod +x cron*
 sudo chmod +x config_change/config
 
-sudo mv -f $(pwd)/iot_frm* zwave_app* app.cfg cmd_class.cfg zwave_device_rec.txt hard_reset_arm cron_job rm_boot_app.sh  config_change/ /medha_gateway
+sudo mv -f $(pwd)/iot_frm* zwave_app* app.cfg cmd_class.cfg zwave_device_rec.txt hard_reset_arm cron_job rm_boot_app.sh README.md config_change/ /medha_gateway
 
 #installing the zipgateway
 echo "*******************************************************************************installing zip gateway**************************************************************************"
